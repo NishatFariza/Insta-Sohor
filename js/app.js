@@ -17,8 +17,11 @@ const isLiked = (id) => {
 };
 
 const addToLiked = (id) => {
+  const remainingPosts = posts.filter((post) => !reportedPostsId.includes(post.id));
     likedPostsId.push(id); 
-    showPosts(posts);
+    // showPosts(posts);
+
+    showPosts(remainingPosts);
 };
 
 const reportPost = (id) => {
@@ -136,7 +139,9 @@ const createPost = (post) => {
     return div;
 };
 
+  /*  show all posts */
 const showPosts = (posts) => {
+  // console.log(posts)
     const productsContainer = document.getElementById( "posts" );
     productsContainer.innerHTML = "";
 
@@ -146,6 +151,7 @@ const showPosts = (posts) => {
     });
 };
 
+/* show liked post */
 const displayLikedPosts = () => {
     document.getElementById('liked').innerHTML="";
     const likedPosts = getLikedPosts();
@@ -155,6 +161,7 @@ const displayLikedPosts = () => {
     });
 };
 
+/* show reported post */
 const displayReportedPosts = () => {
   document.getElementById("reported").innerHTML="";
     const reportedPosts = getReportedPosts();
