@@ -88,87 +88,112 @@
         <h1>Reported posts</h1>
       </div>
     </main>
-    <section class="container my-5 shadow-lg">
-      <div class="accordion accordion-flush" id="accordionFlushExample">
+    <section class="container my-5">
+      <div class="accordion" id="accordionExample">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
+          <h2 class="accordion-header" id="headingOne">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseOne"
-              aria-expanded="false"
-              aria-controls="flush-collapseOne"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
             >
-              Accordion Item #1
+              <h4>How does javaScript work?</h4>
             </button>
           </h2>
           <div
-            id="flush-collapseOne"
-            class="accordion-collapse collapse"
-            aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFlushExample"
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> class. This is the
-              first item's accordion body.
+              <strong
+                >JavaScript is a single threaded non-blocking asynchronous
+                concurrent. Which is one of the most popular language. The
+                JavaScript engine consists of memory heap and call stack these
+                two main components. JavaScript has a single Call Stack.
+                Therefore it can do one thing at a time.</strong
+              >
             </div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
+          <h2 class="accordion-header" id="headingTwo">
             <button
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseTwo"
+              data-bs-target="#collapseTwo"
               aria-expanded="false"
-              aria-controls="flush-collapseTwo"
+              aria-controls="collapseTwo"
             >
-              Accordion Item #2
+              <h4>What does JavaScript event loop do?</h4>
             </button>
           </h2>
           <div
-            id="flush-collapseTwo"
+            id="collapseTwo"
             class="accordion-collapse collapse"
-            aria-labelledby="flush-headingTwo"
-            data-bs-parent="#accordionFlushExample"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> class. This is the
-              second item's accordion body. Let's imagine this being filled with
-              some actual content.
+              <strong
+                >JavaScript is single-threaded language that's why it's only one
+                task can run at a time. The event loop is the secret behind
+                JavaScript’s asynchronous programming.When we invoke a function,
+                it gets added to something called the call stack.The event loop
+                is a constantly running process that monitors both the callback
+                queue and the call stack and Then the call back added to the
+                call stack and executed. And last once a returned a value, Its
+                get popped off the call stack.</strong
+              >
             </div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
+          <h2 class="accordion-header" id="headingThree">
             <button
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseThree"
+              data-bs-target="#collapseThree"
               aria-expanded="false"
-              aria-controls="flush-collapseThree"
+              aria-controls="collapseThree"
             >
-              Accordion Item #3
+              <h4>
+                What is the difference of local storage and session storage?
+              </h4>
             </button>
           </h2>
           <div
-            id="flush-collapseThree"
+            id="collapseThree"
             class="accordion-collapse collapse"
-            aria-labelledby="flush-headingThree"
-            data-bs-parent="#accordionFlushExample"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> class. This is the
-              third item's accordion body. Nothing more exciting happening here
-              in terms of content, but just filling up the space to make it
-              look, at least at first glance, a bit more representative of how
-              this would look in a real-world application.
+              <strong>
+                <span class="fs-5">Local Storage: </span>Local Storage can be
+                accessed from any window, The stored data is stored across
+                browser sessions.Local Storage will not expire for life unless
+                the browser is uninstalled and The capacity of Local Storage is
+                10 MB. Developers can use localStorage.setItem ('key', 'value')
+                to store data in local storage.</strong
+              >
+            </div>
+            <div class="accordion-body">
+              <strong>
+                <span class="fs-5">Session Storage: </span>The sessionStorage
+                object stores data only for a session. It means that the data
+                stored in the sessionStorage will be deleted when the browser is
+                closed.A page session lasts as long as the web browser is open
+                and survives over the page refresh.The capacity of Session
+                Storage is 5 MB. Developer can use sessionStorage.setItem('kye',
+                'value') for store data on session Storage.</strong
+              >
             </div>
           </div>
         </div>
